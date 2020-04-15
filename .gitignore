@@ -2,3 +2,5 @@
 *.sas
 *.pptx
 *.doc
+.ipynb_checkpoints
+Panel_21_FYC_Longitudinal.ipynb
