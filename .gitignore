@@ -1,6 +1,5 @@
-*.SAS7bdat
-*.sas
-*.pptx
-*.doc
+*.docx
+*.zip
 .ipynb_checkpoints
-Panel_21_FYC_Longitudinal.ipynb
+*/.ipynb_checkpoints/*
+
