@@ -13,7 +13,7 @@ This current repository contains:
     documentation and MEPS data documentation – all in a single .ipynb file that
     can be directly viewed from the web browser
 
--   SAS exercises presented in MEPS Workshop, April 14-15, 2020
+-   SAS exercises presented at MEPS Workshop, April 14-15, 2020
 
 -   additional SAS programs/macros on MEPS data analysis (primarily PROC
     SURVEYMEANS and PROC SURVEYFREQ applications)
