@@ -26,8 +26,8 @@ held liable or responsible to any person or entity with respect to any loss or
 incidental or consequential damages caused by anyone’s use of the information or
 SAS code contained herein.
 
-Views expressed here are those of Pradip K. Muhuri and do not necessarily
-represent or reflect those of AHRQ/CFACT.
+Views expressed here are those of the author and do not necessarily represent or
+reflect those of AHRQ/CFACT.
 
 Please contact the author (<Pradip.Muhuri@ahrq.hhs.gov>) if you find errors in
 SAS code or code explanations.
