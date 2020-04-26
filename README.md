@@ -1,28 +1,33 @@
-This is a public repository containing the following:
+This is a public repository hosted by Pradip K. Muhuri who is currently employed
+with the Center for Financing, Access and Cost Trends (CFACT), Agency for
+Healthcare Research and Quality (AHRQ), Department of Health and Human Services.
 
--   References (hyperlink) for SAS Documentation on complex survey data analysis
+Materials contained here may supplement those posted to
+<https://github.com/HHS-AHRQ/MEPS> - an official git repository maintained by
+AHRQ/CFACT.
 
-    -   PROC SURVEYMEANS
+This current repository contains:
 
-    -   PROC SURVEYFREQ
+-   Jupyter Notebooks Applications of SAS programs (MEPS analysis), SAS log, and
+    output along with code explanations and hyperlinks for relevant online SAS
+    documentation and MEPS data documentation – all in a single .ipynb file that
+    can be directly viewed from the web browser
 
--   Medical Expenditure Panel Surveys (MEPS) documentation available from the
-    web
+-   SAS exercises presented in MEPS Workshop, April 14-15, 2020
 
--   MEPS public use data files
+-   additional SAS programs/macros on MEPS data analysis (primarily PROC
+    SURVEYMEANS and PROC SURVEYFREQ applications)
 
--   Jupyter Notebook applications and references
+All SAS programs were run using SAS® 9.4 M6 in Jupyter Notebook (JupyterLab).
 
--   Four exercises presented in MEPS Workshop, April 14-15, 2020
+The author of this repository makes no warranties for these materials and
+disclaims all liability therefor. Neither AHRQ/CFACT nor the author shall be
+held liable or responsible to any person or entity with respect to any loss or
+incidental or consequential damages caused by anyone’s use of the information or
+SAS code contained herein.
 
--   Additional SAS programs on \`PROC SURVEYMEAN\` ‘PROC SURVEYFREQ\`
-    applications
+Views expressed here are those of Pradip K. Muhuri and do not necessarily
+represent or reflect those of AHRQ/CFACT.
 
-All example-SAS programs are run in Jupyter Notebook (JupyterLab)
-
-Pradip Muhuri makes no warranties with respect to these materials and disclaims
-all liability therefor. He shall not held liable or responsible to any person or
-entity with respect to any loss or incidental or consequential damages caused by
-anyone’s use of the information or SAS code contained herein. Please contact me
-(<Pradip.Muhuri@ahrq.hhs.gov>) if you find errors in SAS code or code
-explanations.
+Please contact the author (<Pradip.Muhuri@ahrq.hhs.gov>) if you find errors in
+SAS code or code explanations.
