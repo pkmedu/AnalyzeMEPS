@@ -1,6 +1,6 @@
-This is a public repository hosted by Pradip K. Muhuri who is currently employed
-with the Center for Financing, Access and Cost Trends (CFACT), Agency for
-Healthcare Research and Quality (AHRQ), Department of Health and Human Services.
+This is a public repository hosted by Pradip K. Muhuri, PhD at the Center for
+Financing, Access and Cost Trends (CFACT), Agency for Healthcare Research and
+Quality (AHRQ), Department of Health and Human Services.
 
 Materials contained here may supplement those posted to
 <https://github.com/HHS-AHRQ/MEPS> - an official git repository maintained by
@@ -8,14 +8,14 @@ AHRQ/CFACT.
 
 This current repository contains:
 
--   Jupyter Notebooks Applications of SAS programs (MEPS analysis), SAS log, and
-    output along with code explanations and hyperlinks for relevant online SAS
-    documentation and MEPS data documentation – all in a single .ipynb file that
-    can be directly viewed from the web browser
+-   Jupyter Notebooks Applications of SAS programs, SAS log, and output along
+    with code explanations (for MEPS data analysis), and hyperlinks for relevant
+    online SAS documentation and MEPS data documentation – all in a single
+    .ipynb file that can be directly viewed from the web browser
 
 -   SAS exercises presented at MEPS Workshop, April 14-15, 2020
 
--   additional SAS programs/macros on MEPS data analysis (primarily PROC
+-   additional SAS programs/macros for MEPS data analysis (primarily PROC
     SURVEYMEANS and PROC SURVEYFREQ applications)
 
 All SAS programs were run using SAS® 9.4 M6 in Jupyter Notebook (JupyterLab).
