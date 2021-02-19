@@ -1,0 +1,110 @@
+ 2014 PSAQ Survey, Analysis Variable: FluShotPastYear
+
+The SURVEYMEANS Procedure
+
+            Data Summary
+
+Number of Strata                 165
+Number of Clusters               334
+Number of Observations          2185
+Sum of Weights             170400202
+
+
+                                Statistics
+ 
+                                 Std Error                       Std Error
+Variable          N      Mean      of Mean             Sum          of Sum
+--------------------------------------------------------------------------
+x_flushot     2,149     0.496       0.0132      83,104,761       3,493,393
+--------------------------------------------------------------------------
+ 2014 PSAQ Survey, Analysis Variable: FluShotPastYear
+
+The SURVEYMEANS Procedure
+
+                            Statistics for x_psaqage Domains
+ 
+                                               Std Error                       Std Error
+x_psaqage     Variable          N      Mean      of Mean             Sum          of Sum
+----------------------------------------------------------------------------------------
+Ages 35-64    x_flushot     1,037     0.410       0.0163      49,148,922       2,632,163
+Ages 65+      x_flushot     1,112     0.712       0.0180      33,955,839       1,807,218
+----------------------------------------------------------------------------------------
+ 2014 PSAQ Survey, Analysis Variable: FluShotPastYear
+
+The SURVEYMEANS Procedure
+
+                             Statistics for SEX Domains
+ 
+                                           Std Error                       Std Error
+SEX       Variable          N      Mean      of Mean             Sum          of Sum
+------------------------------------------------------------------------------------
+Male      x_flushot     1,018     0.468       0.0190      37,482,673       2,020,789
+Female    x_flushot     1,131     0.521       0.0173      45,622,089       2,140,671
+------------------------------------------------------------------------------------
+ 2014 PSAQ Survey, Analysis Variable: FluShotPastYear
+
+The SURVEYMEANS Procedure
+
+                                Statistics for x_psaqage*r_edrecode2 Domains
+ 
+                                                                    Std Error                       Std Error
+x_psaqage     r_edrecode2          Variable          N      Mean      of Mean             Sum          of Sum
+-------------------------------------------------------------------------------------------------------------
+Ages 35-64    Some College         x_flushot       644     0.450       0.0217      33,301,498       2,301,531
+Ages 65+      Some College         x_flushot       577     0.725       0.0234      18,494,620       1,310,257
+-------------------------------------------------------------------------------------------------------------
+ 2014 PSAQ Survey, Analysis Variable: SmokeDailyPastYear
+
+The SURVEYMEANS Procedure
+
+            Data Summary
+
+Number of Strata                 165
+Number of Clusters               334
+Number of Observations          2185
+Sum of Weights             170400202
+
+
+                                Statistics
+ 
+                                  Std Error                       Std Error
+Variable           N      Mean      of Mean             Sum          of Sum
+---------------------------------------------------------------------------
+x_ofttobac     2,148     0.128       0.0093      21,524,956       1,728,990
+---------------------------------------------------------------------------
+ 2014 PSAQ Survey, Analysis Variable: SmokeDailyPastYear
+
+The SURVEYMEANS Procedure
+
+                            Statistics for x_psaqage Domains
+ 
+                                                Std Error                       Std Error
+x_psaqage     Variable           N      Mean      of Mean             Sum          of Sum
+-----------------------------------------------------------------------------------------
+Ages 35-64    x_ofttobac     1,040     0.150       0.0123      18,090,685       1,638,945
+Ages 65+      x_ofttobac     1,108     0.072       0.0093       3,434,271         455,430
+-----------------------------------------------------------------------------------------
+ 2014 PSAQ Survey, Analysis Variable: SmokeDailyPastYear
+
+The SURVEYMEANS Procedure
+
+                             Statistics for SEX Domains
+ 
+                                            Std Error                       Std Error
+SEX       Variable           N      Mean      of Mean             Sum          of Sum
+-------------------------------------------------------------------------------------
+Male      x_ofttobac     1,022     0.158       0.0135      12,719,544       1,276,630
+Female    x_ofttobac     1,126     0.101       0.0101       8,805,412         917,343
+-------------------------------------------------------------------------------------
+ 2014 PSAQ Survey, Analysis Variable: SmokeDailyPastYear
+
+The SURVEYMEANS Procedure
+
+                                 Statistics for x_psaqage*r_edrecode2 Domains
+ 
+                                                                     Std Error                       Std Error
+x_psaqage     r_edrecode2          Variable           N      Mean      of Mean             Sum          of Sum
+--------------------------------------------------------------------------------------------------------------
+Ages 35-64    Some College         x_ofttobac       647     0.108       0.0127       8,018,225         985,140
+Ages 65+      Some College         x_ofttobac       573     0.048       0.0106       1,223,560         269,126
+--------------------------------------------------------------------------------------------------------------
