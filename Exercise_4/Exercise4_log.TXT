@@ -1,0 +1,138 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+2154  options obs=max nocenter nodate nonumber formchar="|----|+|---+=|-/\<>*" ;
+2155  
+2156  /*******************************************************************
+2157  * RUN logistic regression model (PROC SURVEYLOGISTIC) Predictors of the receipt of flu shot
+2158  ********************************************************************/
+2159  
+2160  PROC FORMAT;
+2161  
+2162  value age18p_f
+2163      18-high = '18p'
+2164      other = '2';
+NOTE: Format AGE18P_F has been output.
+2165  
+2166  
+2167  value age_f
+2168      18-34 = '18-34'
+2169      35-64 = '35-64'
+2170      65-High ='65+';
+NOTE: Format AGE_F has been output.
+2171  
+2172  value ADFLST42_fmt
+2173      -15 = "Cann't be computed"
+2174      -1 = 'Inapplicable'
+2175      1  = 'Yes'
+2176      0,2  ='No';
+NOTE: Format ADFLST42_FMT has been output.
+2177  
+2178  
+2179  value sex_fmt   1 = 'Male'
+2180                  2 = 'Female';
+NOTE: Format SEX_FMT has been output.
+2181  
+2182  
+2183  VALUE Racethx_fmt
+2184    1 = 'Hispanic'
+2185    2 = 'NH White only'
+2186    3 = 'NH Black only'
+2187    4 = 'NH Asian only'
+2188    5 = 'NH Other etc';
+NOTE: Format RACETHX_FMT has been output.
+2189  
+2190  
+2191  
+2192  value povcat_fmt
+2193     1,2,3 = 'PNL INCOME'
+2194     4 = 'MIDDLE INCOME'
+2195     5 = 'HIGH INCOME' ;
+NOTE: Format POVCAT_FMT has been output.
+2196  
+2197     value INSCOV18_fmt
+2198     1 = 'Any Private'
+2199     2 = 'Public Only'
+2200     3 = 'Uninsured';
+NOTE: Format INSCOV18_FMT has been output.
+2201  run;
+
+NOTE: PROCEDURE FORMAT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+2202  
+2203  %LET DataFolder = C:\DATA\MySDS;  /* Adjust the folder name, if needed */
+2204  libname CDATA "&DataFolder";
+NOTE: Libref CDATA was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\DATA\MySDS
+2205  %let kept_vars_2018 =  VARSTR VARPSU perwt18f saqwt18f ADFLST42  AGELAST RACETHX POVCAT18 INSCOV18 SEX;
+2206  data meps_2018;
+2207   set CDATA.h209 (keep= &kept_vars_2018);
+2208  
+2209  if ADFLST42 = 1 then flushot =1;
+2210  else if ADFLST42 = 2 then flushot =0;
+2211  else flushot =.;
+2212  run;
+
+NOTE: There were 30461 observations read from the data set CDATA.H209.
+NOTE: The data set WORK.MEPS_2018 has 30461 observations and 11 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.09 seconds
+      
+
+2213  
+2214  title " 2018 MEPS";
+2215  
+2216  ods graphics off;
+2217  ods select domain;
+2218  PROC SURVEYMEANS DATA=meps_2018 nobs mean stderr ;
+2219      VAR flushot;
+2220      STRATUM VARSTR;
+2221      CLUSTER VARPSU;
+2222      WEIGHT saqwt18f;
+2223      DOMAIN  agelast('18p');
+2224      format agelast age18p_f. flushot  ADFLST42_fmt.;
+2225      class  ADFLST42 flushot;
+2226  RUN;
+
+NOTE: Due to nonpositive weights, 10891 observation(s) were deleted.
+NOTE: PROCEDURE SURVEYMEANS used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.04 seconds
+      
+
+2227  
+2228  PROC SURVEYLOGISTIC DATA=meps_2018;
+2229      STRATUM VARSTR;
+2230       CLUSTER VARPSU;
+2231     WEIGHT saqwt18f;
+2232      CLASS sex(ref='Male')
+2233                 RACETHX  (ref='NH White only')
+2234                 POVCAT18 (ref='HIGH INCOME')
+2235                 INSCOV18 (ref='Any Private');
+2236           model flushot(ref= '0')= sex RACETHX  POVCAT18 INSCOV18;
+2237  
+2238       format agelast age18p_f.
+2239        sex sex_fmt.
+2240        RACETHX racethx_fmt.
+2241        INSCOV18 INSCOV18_fmt.
+2242        POVCAT18  POVCAT_fmt.;
+2243      RUN;
+
+NOTE: PROC SURVEYLOGISTIC is modeling the probability that flushot=1.
+NOTE: Convergence criterion (GCONV=1E-8) satisfied.
+NOTE: PROCEDURE SURVEYLOGISTIC used (Total process time):
+      real time           0.26 seconds
+      cpu time            0.20 seconds
+      
+
+2244  
+2245  proc printto;
+2246  run;
+

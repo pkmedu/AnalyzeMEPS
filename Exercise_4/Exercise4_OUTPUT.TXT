@@ -1,0 +1,167 @@
+ 2018 MEPS
+
+The SURVEYMEANS Procedure
+
+                      Statistics for AGELAST Domains
+ 
+                                                                 Std Error
+AGELAST    Variable    Level                      N      Mean      of Mean
+--------------------------------------------------------------------------
+18p        flushot     No                    10,939     0.579       0.0064
+                       Yes                    8,232     0.421       0.0064
+--------------------------------------------------------------------------
+ 2018 MEPS
+
+The SURVEYLOGISTIC Procedure
+
+                                     Model Information
+
+Data Set                      WORK.MEPS_2018                                                
+Response Variable             flushot                                                       
+Number of Response Levels     2                                                             
+Stratum Variable              VARSTR                      VARIANCE ESTIMATION STRATUM - 2018
+Number of Strata              117                                                           
+Cluster Variable              VARPSU                      VARIANCE ESTIMATION PSU - 2018    
+Number of Clusters            257                                                           
+Weight Variable               SAQWT18F                    FINAL SAQ PERSON WEIGHT, 2018     
+Model                         Binary Logit                                                  
+Optimization Technique        Fisher's Scoring                                              
+Variance Adjustment           Degrees of Freedom (DF)                                       
+
+
+             Variance Estimation
+
+Method                           Taylor Series
+Variance Adjustment    Degrees of Freedom (DF)
+
+
+Number of Observations Read       30461
+Number of Observations Used       19171
+Sum of Weights Read             2.494E8
+Sum of Weights Used            2.4455E8
+
+
+                  Response Profile
+ 
+ Ordered                      Total            Total
+   Value      flushot     Frequency           Weight
+
+       1            0         10939        141605611
+       2            1          8232        102943003
+
+Probability modeled is flushot=1.
+
+NOTE: 11290 observations were deleted due to missing values for the response or explanatory variables.
+
+
+               Class Level Information
+ 
+Class        Value                 Design Variables
+
+SEX          Female             1                     
+             Male              -1                     
+
+RACETHX      Hispanic           1      0      0      0
+             NH Asian only      0      1      0      0
+             NH Black only      0      0      1      0
+             NH Other etc       0      0      0      1
+             NH White only     -1     -1     -1     -1
+
+POVCAT18     HIGH INCOME       -1     -1              
+             MIDDLE INCOME      1      0              
+             PNL INCOME         0      1              
+
+INSCOV18     Any Private       -1     -1              
+             Public Only        1      0              
+             Uninsured          0      1              
+
+
+                    Model Convergence Status
+
+         Convergence criterion (GCONV=1E-8) satisfied.          
+
+
+ 2018 MEPS
+
+The SURVEYLOGISTIC Procedure
+
+         Model Fit Statistics
+ 
+                             Intercept
+              Intercept            and
+Criterion          Only     Covariates
+
+AIC           332878170      317537832
+SC            332878188      317538005
+-2 Log L      332878168      317537812
+
+
+             Testing Global Null Hypothesis: BETA=0
+ 
+Test                 F Value       Num DF       Den DF     Pr > F
+
+Likelihood Ratio      114.26       7.7405      1083.67     <.0001
+Score                  80.32            9          132     <.0001
+Wald                   97.60            9          132     <.0001
+
+         NOTE: Second-order Rao-Scott design correction
+          0.1627 applied to the Likelihood Ratio test.
+
+
+           Type 3 Analysis of Effects
+ 
+Effect      F Value    Num DF    Den DF    Pr > F
+
+SEX           81.87         1       140    <.0001
+RACETHX       27.35         4       137    <.0001
+POVCAT18      43.07         2       139    <.0001
+INSCOV18     177.27         2       139    <.0001
+
+
+               Analysis of Maximum Likelihood Estimates
+ 
+                                       Standard
+Parameter                  Estimate       Error    t Value    Pr > |t|
+
+Intercept                   -0.8568      0.0505     -16.97      <.0001
+SEX       Female             0.1456      0.0161       9.05      <.0001
+RACETHX   Hispanic          -0.2357      0.0504      -4.68      <.0001
+RACETHX   NH Asian only      0.1607      0.0673       2.39      0.0182
+RACETHX   NH Black only     -0.2005      0.0542      -3.70      0.0003
+RACETHX   NH Other etc      -0.0279      0.0829      -0.34      0.7372
+POVCAT18  MIDDLE INCOME     -0.0819      0.0297      -2.76      0.0066
+POVCAT18  PNL INCOME        -0.2006      0.0323      -6.20      <.0001
+INSCOV18  Public Only        0.6837      0.0375      18.25      <.0001
+INSCOV18  Uninsured         -1.0057      0.0573     -17.55      <.0001
+
+         NOTE: The degrees of freedom for the t tests is 140.
+
+
+                           Odds Ratio Estimates
+                                     
+                                              Point       95% Confidence
+Effect                                     Estimate           Limits
+
+SEX      Female vs Male                       1.338       1.256       1.426
+RACETHX  Hispanic      vs NH White only       0.583       0.517       0.659
+RACETHX  NH Asian only vs NH White only       0.867       0.727       1.035
+RACETHX  NH Black only vs NH White only       0.604       0.529       0.691
+RACETHX  NH Other etc  vs NH White only       0.718       0.580       0.888
+POVCAT18 MIDDLE INCOME vs HIGH INCOME         0.695       0.628       0.768
+POVCAT18 PNL INCOME    vs HIGH INCOME         0.617       0.553       0.689
+INSCOV18 Public Only vs Any Private           1.436       1.314       1.569
+INSCOV18 Uninsured   vs Any Private           0.265       0.223       0.315
+
+  NOTE: The degrees of freedom in computing the confidence limits is 140.
+
+
+ 2018 MEPS
+
+The SURVEYLOGISTIC Procedure
+
+Association of Predicted Probabilities and Observed Responses
+
+Percent Concordant        61.2    Somers' D    0.278
+Percent Discordant        33.4    Gamma        0.294
+Percent Tied               5.4    Tau-a        0.136
+Pairs                 90049848    c            0.639
