@@ -43,7 +43,9 @@ VALUE Racethx_fmt
  
 		   
 value povcat_fmt
-   1,2,3 = 'PNL INCOME' 
+   1 = 'POOR' 
+   2 = 'NEAR POOR'
+   3 = 'LOW INCOME'
    4 = 'MIDDLE INCOME'  
    5 = 'HIGH INCOME' ;
  
@@ -95,6 +97,21 @@ PROC SURVEYLOGISTIC DATA=meps_2018;
     RUN;
 
 	
+   
+	********************* reproduce Emily's results ;
+	PROC SURVEYLOGISTIC DATA=meps_2018;
+    STRATUM VARSTR;
+     CLUSTER VARPSU;
+   WEIGHT saqwt18f;
+    CLASS sex(ref='Male')
+               RACETHX  (ref='Hispanic')
+               INSCOV18 (ref='Any Private') ;
+         model flushot(ref= '0')= agelast sex RACETHX  INSCOV18;
+      format agelast age18p_f. 
+      sex sex_fmt. 
+      RACETHX racethx_fmt. 
+      INSCOV18 INSCOV18_fmt.;
+    RUN;
 
 proc printto;
 run;

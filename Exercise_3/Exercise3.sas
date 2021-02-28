@@ -25,7 +25,7 @@ PROC FORMAT;
    
      value yes_no_fmt
       1 = 'Yes'
-      0,2 = 'No'; 
+      2 = 'No'; 
 
 	
 run;
@@ -44,11 +44,11 @@ data meps_2017;
    * Create a subpopulation indicator called SPOP
     and a new variable called JOINT_PAIN  based on ARTHDX and JTPAIN31;
 
-   spop=0;
+   spop=2;
    if agelast>=18 and not (ARTHDX <=0 and JTPAIN31 <0) then do;
   	  SPOP=1; 
    	 if ARTHDX=1 | JTPAIN31=1 then joint_pain =1;
-   	 else joint_pain=0;
+   	 else joint_pain=2;
    end;
 
    label totexp = 'TOTAL HEALTH CARE EXP'
@@ -68,11 +68,11 @@ data meps_2018;
   * Create a subpopulation indicator called SPOP
     and a new variable called JOINT_PAIN  based on ARTHDX and JTPAIN31_M18;
 
-   spop=0;
+   spop=2;
    if agelast>=18 and not (ARTHDX <=0 and JTPAIN31_M18 <0) then do;
   	  SPOP=1; 
    	 if ARTHDX=1 | JTPAIN31_M18=1 then joint_pain =1;
-   	 else joint_pain=0;
+   	 else joint_pain=2;
    end;
 run;
 
@@ -97,8 +97,8 @@ run;
 
 title 'MEPS 2017-18 combined';
 ods exclude statistics;
-PROC SURVEYMEANS DATA=meps_1718  nobs mean sum ;
-    VAR joint_pain totexp totslf;
+PROC SURVEYMEANS DATA=meps_1718  nobs mean stderr sum ;
+    VAR joint_pain ;
     STRATUM VARSTR ;
     CLUSTER VARPSU;
     WEIGHT perwtf;
@@ -109,7 +109,7 @@ RUN;
 
 title 'MEPS 2017-18 combined';
 ods exclude statistics;
-PROC SURVEYMEANS DATA=meps_1718  nobs mean sum median;
+PROC SURVEYMEANS DATA=meps_1718  nobs mean stderr sum;
     VAR totexp totslf;
     STRATUM VARSTR ;
     CLUSTER VARPSU;
@@ -118,18 +118,5 @@ PROC SURVEYMEANS DATA=meps_1718  nobs mean sum median;
 	format joint_pain yes_no_fmt.  ;
 ;
 RUN;
-
-title 'MEPS 2017-18 combined / with any expense';
-ods exclude statistics;
-PROC SURVEYMEANS DATA=meps_1718  nobs mean sum median;
-    VAR totexp totslf;
-    STRATUM VARSTR ;
-    CLUSTER VARPSU;
-    WEIGHT perwtf;
-	domain spop('1')*totexp_x('Any Expense')*joint_pain;
-	format joint_pain yes_no_fmt.   totexp_x totexp_fmt.;
-;
-RUN;
-
 proc printto;
 run;
