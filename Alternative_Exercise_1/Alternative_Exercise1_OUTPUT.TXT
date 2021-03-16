@@ -1,69 +1,0 @@
-                                                NATIONAL HEALTH CARE EXPENSES, 2018                                                1
-                                               PERCENTAGE OF PERSONS WITH AN EXPENSE
-
-                                                                                                        STD of
-                                                                                                        Number
-                                        Proportion                              Persons                Persons
-                                         with an        SE of                  with Any                   with
-                      Variable Name      Expense      Proportion                Expense            Any Expense
-
-                     WITH_AN_EXPENSE      86.7%         .360%               282,829,352              6,571,909
-                                                NATIONAL HEALTH CARE EXPENSES, 2018                                                2
-                                               PERCENTAGE OF PERSONS WITH AN EXPENSE
-
-                                                     Percentile                                                          Control
-    Obs VarName          VarLabel         Percentile   Label    Quantile     Estimate       StdErr    LowerCL    UpperCL   Var
-
-     1  TOTEXP18 TOTAL HEALTH CARE EXP 18        50    Median      0.5    1316.440031    42.514805 1232.38598 1400.49408        
-                                                NATIONAL HEALTH CARE EXPENSES, 2018                                                3
-                                                       MEAN OVERALL EXPENSES
-
-                          Variable                     SE of                  Total                 STD of
-                            Name        Mean($)      Mean($)            Expense ($)       Total Expense($)
-
-                          TOTEXP18        6,063          128      1,978,569,861,536         62,127,195,159
-                                                NATIONAL HEALTH CARE EXPENSES, 2018                                                4
-                                                      MEDIAN OVERALL EXPENSES
-
-                                                 Variable                   SE of
-                                                   Name      Median($)    Median($)
-
-                                                 TOTEXP18        1,316           43
-                                                NATIONAL HEALTH CARE EXPENSES, 2018                                                5
-                                         PERCENTAGE OF PERSONS WITH AN EXPENSE BY AGE GROUP
-
-                  PERSON'S AGE
-                   LAST TIME      Variable                     SE of                                       STD of
-                    ELIGIBLE        Name           Mean($)    Mean($)                   SUM                   SUM
-
-                      0-64        TOTEXP18          $4,786    118.736    $1,300,166,249,200       $47,728,524,403
-                      65+         TOTEXP18         $12,411    322.226      $678,403,612,336       $24,616,181,502
-                                                NATIONAL HEALTH CARE EXPENSES, 2018                                                6
-                                               MEAN HEALTH CARE EXPENSES BY AGE GROUP
-
-                  PERSON'S AGE
-                   LAST TIME      Variable                     SE of                                       STD of
-                    ELIGIBLE        Name           Mean($)    Mean($)       SUM of Expenses                   SUM
-
-                      0-64        TOTEXP18          $4,786    118.736    $1,300,166,249,200       $47,728,524,403
-                      65+         TOTEXP18         $12,411    322.226      $678,403,612,336       $24,616,181,502
-                                                NATIONAL HEALTH CARE EXPENSES, 2018                                                7
-                                         PERCENTAGE OF PERSONS WITH AN EXPENSE BY AGE GROUP
-
-                      PERSON'S AGE
-                       LAST TIME       Variable                      SE of                             STD of
-                        ELIGIBLE         Level       Proportion    Proportion             SUM             SUM
-
-                          0-64        No Expense       15.3%         .414%         41,565,738       1,364,277
-                          0-64        Any Expense      84.7%         .414%        230,099,490       5,896,802
-                          65+         No Expense        3.5%         .294%          1,932,797         176,664
-                          65+         Any Expense      96.5%         .294%         52,729,863       1,348,510
-                                                NATIONAL HEALTH CARE EXPENSES, 2018                                                8
-                                              MEDIAN HEALTH CARE EXPENSES BY AGE GROUP
-
-                                      PERSON'S AGE
-                                       LAST TIME      Variable                           SE of
-                                        ELIGIBLE        Name         Median($)       Median($)
-
-                                          0-64        TOTEXP18            $938             $25
-                                          65+         TOTEXP18          $5,577            $164
