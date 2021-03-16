@@ -16,11 +16,11 @@ options  nosymbolgen nomlogic nomprint; /* Options may be turned on when needed 
 * The following two statements delete the existing files in the libraries  *
 * specified. The user has the option to delete or comment out them        *            *
 ***************************************************************************/
-libname librefs     ('C:\Data\zipfiles',
+*libname librefs     ('C:\Data\zipfiles',
                      'C:\Data\xptfiles',
 					 'C:\Data\cptfiles',
 					 'C:\Data\MySDS');
-proc datasets library=librefs kill;run;quit;
+*proc datasets library=librefs kill;run;quit;
 
 /* Create 4 global macro variables for naming folders that were already created  */
 
@@ -36,8 +36,8 @@ proc datasets library=librefs kill;run;quit;
 *   - a list macro variables of macro variables to itearte over
 *****************************************************************************/
 /* One has the option to leave blanks for the any one of the macro variables*/;
-%let xpt_files = h183 h193 h202; 
-%let cpt_files = h201 h209 h206a;
+%let xpt_files = /*h183 h193 h202*/; 
+%let cpt_files = /*h201 h209 h206a*/ h210;
 %let files = &xpt_files &cpt_files;
 
 %put &=xpt_files;
