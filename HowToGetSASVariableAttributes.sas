@@ -1,4 +1,8 @@
-
+/*********************************************************************************
+* Topic: How to get SAS variable attributed dynamically (Various) 
+* Wtitten by Pradip Muhuri
+* Use the program at your own risk (no warranties).
+**********************************************************************************/
 
 	 proc sql;
          select name, type, length, label

@@ -1,4 +1,8 @@
-
+/*********************************************************************************
+* Topic: How to list variables of interest (Flu Variabls) from various NEPS files  
+* Wtitten by Pradip Muhuri
+* Use the program at your own risk (no warranties).
+**********************************************************************************/
 
 options nocenter nodate ps = 80;
 proc sql;

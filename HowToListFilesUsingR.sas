@@ -1,4 +1,8 @@
-
+/*********************************************************************************
+* Topic: How to file names  
+* Wtitten by Pradip Muhuri
+* Use the program at your own risk (no warranties).
+**********************************************************************************/
 
 PROC IML;
 SUBMIT / R;

@@ -1,3 +1,9 @@
+/*********************************************************************************
+* Topic: How to file names (Various) 
+* Wtitten by Pradip Muhuri
+* Acknowledgements: Online Sources, 
+* Use the program at your own risk (no warranties).
+**********************************************************************************/
 
 filename DIRLIST pipe 'dir /b /s c:\Data\*.sas';
 data dirlist;

@@ -1,4 +1,9 @@
-*This file resides in C:\Users\Pradip.Muhuri
+*This file resides in C:\Users\Pradip.Muhuri;
+/*********************************************************************************
+* Topic: How to add librefs to some of the routinely used SAS Libraries 
+* Wtitten by Pradip Muhuri
+* Use the program at your own risk (no warranties).
+**********************************************************************************/
 libname pufmeps  'S:\CFACT\Shared\PUF SAS files\SAS V8' access=readonly;
 libname HD "C:\Users\Pradip.Muhuri\OneDrive - HHS Office of the Secretary\HomeDrive";
 libname HDTWO "C:\Users\Pradip.Muhuri\OneDrive - HHS Office of the Secretary\HomeDrive2";

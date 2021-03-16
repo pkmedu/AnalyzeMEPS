@@ -1,4 +1,9 @@
-
+/*********************************************************************************
+* Topic: How to create folders dynamically (Various) 
+* Wtitten by Pradip Muhuri
+* Acknowledgements: Online Sources
+* Use the program at your own risk (no warranties).
+**********************************************************************************/
 
 %LET RootPath=c:\mydata; *common usage : never complete a path with a separator;
 %LET Folder=%SYSFUNC(DCREATE(MyNewFolder,&RootPath)); * separator unnecessary;

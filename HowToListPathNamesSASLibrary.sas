@@ -1,4 +1,10 @@
 
+/*********************************************************************************
+* Topic: How to create folders dynamically (Various) 
+* Wtitten by Pradip Muhuri
+* Acknowledgements: Online Sources, SAS Documentation
+* Use the program at your own risk (no warranties).
+**********************************************************************************/
 libname work list;
 proc options option=work;
 run;

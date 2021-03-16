@@ -1,4 +1,8 @@
-
+/*********************************************************************************
+* Topic: How to retrieve SAS Lcense Information 
+* Acknowledgements: SAS Techncal Support
+* Use the program at your own risk (no warranties).
+**********************************************************************************/
 %macro getInfo;
   options nosyntaxcheck ;
   *LIBNAME _ALL_ LIST;
