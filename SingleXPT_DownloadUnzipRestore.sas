@@ -1,7 +1,7 @@
 * Single_XPT_Download.sas;
 /************************************************************************************
 * Topic: DOWNLOAD, UNZIP AND RESTORE a SAS data set from a single XPORT-created 
-* trnsposrt file (only one at a time) from the MEPS website     
+* tranport file (only one at a time) from the MEPS website     
 * Wtitten by Pradip Muhuri
 *
 * Use the program at your own risk (no warranties).

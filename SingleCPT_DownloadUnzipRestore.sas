@@ -1,6 +1,6 @@
 /************************************************************************************
 * Topic: DOWNLOAD, UNZIP AND RESTORE a SAS data set from a single CPORT-created 
-* trnsposrt file (only one at a time) from the MEPS website 
+* transport file (only one at a time) from the MEPS website 
 * Wtitten by Pradip Muhuri
 * Use the program at your own risk (no warranties).
 * Just create a macro variable for the data file you are interested in
