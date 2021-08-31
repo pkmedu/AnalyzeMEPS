@@ -6,9 +6,9 @@
 
 *** Read data from an external file;
 options nocenter nodate nonumber;
-libname new 'C:\Data\MySDS';
-data new.V_added;
-  infile 'C:\Data\Variables_Added_2018.txt' missover;
+Libname new V9 'C:\Data';
+data V_added;
+  infile 'C:\AnalyzeMEPS\Variables_Added_2018.txt' missover;
   input Name :$32.;
 run;
 proc sort data=new.V_added; by Name; run;
@@ -17,7 +17,7 @@ proc sort data=new.V_added; by Name; run;
 proc sql noprint;
     select quote(strip(Name)) into :vars_added_18 
         separated by ' ' 
-        from new.V_added; 
+        from V_added; 
         %let num_vars_added_18=&sqlobs;
 quit;
 %put &=num_vars_added_18;
@@ -32,15 +32,14 @@ quit;
 %put &=num_vars_added_18_2;
 
 proc sql;
-select Name from new.V_added
+select Name from V_added
 where Name not in (&var_list2);
 quit;
 
 
 
 proc sql;
-  
-   select name label='Variable', 
+  select name label='Variable', 
           label label='Description'
    from dictionary.columns 
     where libname='NEW' and memname='H209' and
@@ -51,7 +50,7 @@ proc sql;
     on the macro variable created above;
 
 title;
-ods excel file = 'c:\Data\2018_Added_Vars_rev.xlsx'
+ods excel file = 'c:\AnalyzeMEPS\2018_Added_Vars_rev.xlsx'
   options(row_heights="0,0,0,14,0,0" sheet_interval='PROC'
                   sheet_name="Added" 
                   embedded_titles="yes");

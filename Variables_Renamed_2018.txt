@@ -1,0 +1,5 @@
+
+From DIABDX Diabetes Diagnosis (>17) To DIABDX_M18 Diabetes Diagnosis
+From JTPAIN31 Joint Pain Last 12 Months (>17) – RD 3/1 To JTPAIN31_M18 Joint Pain Last 12 Months (>17) – RD 3/1
+From PROVTY42 Provider Type – R4/2 To PROVTY42_M18 Provider Type – R4/2
+From YNOUSC42 Main Reas Pers Doesnt Have USC-R4/2 To YNOUSC42_M18 Main Reas Pers Doesnt Have USC-R4/2
