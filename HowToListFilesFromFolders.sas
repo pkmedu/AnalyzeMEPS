@@ -1,5 +1,5 @@
 
-/*
+
 proc options option=RLANG;
 run;
 
@@ -9,7 +9,7 @@ setwd ("C:/Data")
 list.files(pattern="SAS*", full.names = TRUE, ignore.case = TRUE) 
 ENDSUBMIT;
 QUIT;
-*/
+
 options nodate nonumber notes source;
  ods html close;
  Filename filelist pipe "dir /b /s c:\Data\SDS_Folder\*.SAS7bdat";

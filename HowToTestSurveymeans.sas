@@ -35,7 +35,7 @@ ods exclude summary statistics;
     DOMAIN POVCAT18 / adjust=bon ;
     FORMAT POVCAT18 povcat_fmt.;
  run;
-
+ods exclude none;
 
 /* SAS Documentation
 CLDIFF requests t type confidence limits for each difference of domain means. You can specify the confidence
@@ -56,7 +56,6 @@ ods select domaindiffs; /* To disply printed output for CLDIFF */
     FORMAT POVCAT18 povcat_fmt.;
  run;
 
-ods exclude summary statistics; /* To suppress printed output for Summary */
 ods select domaindiffs; /* To disply printed output for Domaindiffs/CLDIFF */
  PROC SURVEYMEANS DATA=pufmeps.h209 ;
     VAR totexp18;
@@ -66,4 +65,4 @@ ods select domaindiffs; /* To disply printed output for Domaindiffs/CLDIFF */
     DOMAIN POVCAT18 / ADJUST=BON CLDIFF;
     FORMAT POVCAT18 povcat_fmt.;
  run;
-
+ods select all;

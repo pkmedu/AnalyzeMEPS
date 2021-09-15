@@ -1,9 +1,6 @@
 
-/*********************************************************************************
-* Topic: How to find Strata with lonely PSUs 
-* Wtitten by Pradip Muhuri
-* Use the program at your own risk (no warranties).
-**********************************************************************************/
+
+***FindingStrataWithSinglePSU.sas;
 
 proc freq data=pufmeps.h209;
 tables varstr*varpsu /out=outdata(where=(count=0))
@@ -17,3 +14,4 @@ proc sql noprint;
     from outdata;
 quit;
 %put SQLOBS=*&sqlobs*;
+%put &=singlestr;

@@ -12,10 +12,11 @@ proc import datafile="&path"
   sheet="Sheet1";
   getnames=YES;
  run;
- proc contents data=work.cond_16_19; run;
+/* proc contents data=work.cond_16_19; run; */
 proc sort data=work.cond_16_19;    
   by descending exp19;; run;
 proc print data=work.cond_16_19 (drop=DIFF:);
-var condition exp19 Mean19;
-*format N: exp: comma16.;
+var condition pop19 exp19 Mean19 Event19;
+*format N: exp: Event: comma16.;
+where condition = 'Mental disorders';
 run;
