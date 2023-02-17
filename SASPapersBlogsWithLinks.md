@@ -16,13 +16,19 @@ features](https://blogs.sas.com/content/sgf/2019/01/18/navigating-sas-documentat
 Complications](https://www.pharmasug.org/proceedings/2018/BB/PharmaSUG-2018-BB22.pdf)
 (PharmaSUG, 2018)
 
+[(Week 1) SAS-R Cheat Sheet](https://github.com/brendanjodowd/SAS-R/blob/master/sas-r.pdf)
+
+[(Week 1) Learn SAS® in 50 minutes ](https://lexjansen.com/nesug/nesug10/po/po29.pdf)
+
 [(Week 1) Making your SAS code more readable, Cody, R. SAS Blogs. November,
 2019](https://blogs.sas.com/content/sgf/2019/11/06/making-your-sas-code-more-readable/)
 
 [(Week 1) A Method for Independent Program Validation utilising SAS®, R and Python
 (PharmSUG, 2018)](https://www.pharmasug.org/proceedings/2018/AD/PharmaSUG-2018-AD10.pdf)
 
-[Weeks 1-2: DATA Step: The Essence of DATA Step
+[(Week 1) Comparing SAS® and Python – A Coder’s Perspective](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3884-2019.pdf)
+
+[(Week 1) DATA Step: The Essence of DATA Step
 Programming](http://support.sas.com/resources/papers/proceedings11/269-2011.pdf)
 
 [(Week 2) Starting with Raw Data: Beyond the
@@ -434,7 +440,7 @@ destinations](https://blogs.sas.com/content/sastraining/2014/01/03/sas-authors-t
 Structure](https://stackoverflow.com/questions/44078623/sas-regression-output-data-structure/44079317#44079317)
 
 
-[(Week 7) How to use Proc Tabulate](https://www.lexjansen.com/wuss/2016/133_Final_Paper_PDF.pdf)
+[(Week 7) (How to use Proc Tabulate](https://www.lexjansen.com/wuss/2016/133_Final_Paper_PDF.pdf)
 
 [(Week 7) Introduction to PROC TABULATE](https://www.lexjansen.com/nesug/nesug06/dm/da05.pdf)
 
@@ -450,6 +456,8 @@ Global Forum, 2013)
 
 
 Macro Facility
+
+[(Week 9) Hands-On SAS® Macro Programming Essentials for New Users](https://support.sas.com/resources/papers/proceedings15/2506-2015.pdf
 
 [(Week 9) Underutilized Features in the SAS® Macro Language (Excellent
 article)](http://www.wiilsu.org/Hofhiuey832lpsd/Proceedings/Papers/Hurley%20-%20Underutilized%20Features%20in%20SAS%20Macro%20Language.pdf)
