@@ -14,6 +14,10 @@ Mandy   Albertson  95  86  90  95
 Min     Chen       88  92  85  95
 ;
 proc print data=Grades; run;
+proc means data=Grades ;
+   by First notsorted;      
+   var Score;
+run;
 ```
 ```Python
 import pandas as pd
@@ -47,12 +51,6 @@ Grades = pd.read_csv(io.StringIO(data_string))
 
 # Print the DataFrame
 print(Grades)
-```
-```sas
-proc means data=Grades ;
-   by First notsorted;      
-   var Score;
-run;
 ```
 ```Python
 import pandas as pd
