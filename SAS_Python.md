@@ -100,3 +100,76 @@ In pandas, the DataFrame structure is similar to a SAS dataset, but it's more fl
 5. In pandas, the DataFrame structure is similar to a SAS dataset, but it's more flexible and has many built-in functions for data manipulation and analysis.
 
 ```
+``` sas
+data mydata;
+  infile datalines;
+  input identifer payout region ;
+return;
+datalines;
+1 10 1 
+2 20 2 
+3 10 1 
+4 20 3 
+5 10 1 
+6 20 2 
+7 10 3 
+8 20 3 
+9 10 2 
+10 20 4 
+11 10 4 
+12 20 2
+;
+run;
+proc sql;
+select region,
+       sum(payout) as sum_pay
+    from 
+        mydata
+    group by region ;
+quit; 
+
+proc sql;
+create table want5 as(
+select region,
+       sum(payout) as sum_pay
+    from 
+        mydata
+    group by region 
+                         );
+select * 
+   from want5;
+quit; 
+```
+```Python
+import pandas as pd
+import io
+
+# Create the dataset
+data = '''
+1 10 1 
+2 20 2 
+3 10 1 
+4 20 3 
+5 10 1 
+6 20 2 
+7 10 3 
+8 20 3 
+9 10 2 
+10 20 4 
+11 10 4 
+12 20 2
+'''
+
+# Read the data into a pandas DataFrame
+mydata = pd.read_csv(io.StringIO(data), sep='\s+', names=['identifier', 'payout', 'region'])
+
+# Equivalent of the first PROC SQL
+result1 = mydata.groupby('region')['payout'].sum().reset_index(name='sum_pay')
+print("Result of first query:")
+print(result1)
+
+# Equivalent of the second PROC SQL
+want5 = mydata.groupby('region')['payout'].sum().reset_index(name='sum_pay')
+print("\nContents of want5:")
+print(want5)
+```
