@@ -202,5 +202,6 @@ Here, reset_index(name='sum_pay') does two things:
       * It resets the index, making 'region' a regular column again.
       * It names the column resulting from the sum operation 'sum_pay'.
 
-Without reset_index(), the result would be a Series with 'region' as the index. With it, we get a DataFrame with 'region' and 'sum_pay' as columns.
+10. Without reset_index(), the result would be a Series with 'region' as the index.
+With it, we get a DataFrame with 'region' and 'sum_pay' as columns.
 ```
