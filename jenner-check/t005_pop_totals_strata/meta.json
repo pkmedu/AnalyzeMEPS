@@ -1,0 +1,7 @@
+{
+  "bundle": "t005_pop_totals_strata",
+  "source_file": "HowToConstructPopTotalsInStrata.sas",
+  "source_blob_sha": "f524c00f16a22e8758925fc73942be8e7af1b5fa",
+  "source_commit": "3cb64d3c431cbab3f9f9b6110bb3eb6c34dc03b8",
+  "notes": "Byte-identical PROC SUMMARY / PROC SQL / PROC COMPARE logic -- computes per-stratum person counts two independent ways (PROC SUMMARY CLASS/OUTPUT vs. PROC SQL GROUP BY COUNT) and cross-checks them with PROC COMPARE, exactly as the author designed it as a QC pattern. Substituted a mock pufmeps.h209 (17 rows across 5 strata, unique DUPERSID per row) for the author's restricted-access LIBNAME. The captured run reproduces the intended result: PROC COMPARE reports 5/5 observations equal, confirming the two totals-construction methods agree, same as the author's QC check is designed to show."
+}

@@ -1,0 +1,7 @@
+{
+  "bundle": "t006_exercise1_surveymeans",
+  "source_file": "Exercise1.sas",
+  "source_blob_sha": "0f064261f9309d26b462f38eff76b749ca383917",
+  "source_commit": "3cb64d3c431cbab3f9f9b6110bb3eb6c34dc03b8",
+  "notes": "Adapted from the April 2020 MEPS Workshop's first exercise, which teaches the same estimate (proportion of persons with a health care expense) three independent ways: numeric CLASS variable, character variable, and PROC SURVEYFREQ -- plus a DOMAIN breakdown by age group. Substituted a mock cdata.h216 (20 rows, 5 strata) for the author's restricted-access 2019 MEPS Full-Year Consolidated File. Two mechanical edits for Jenner parser gaps found while building this bundle (both filed as regression tests): PROC SURVEYFREQ's STRATUM statement changed to STRATA (Jenner accepts the STRATUM alias only in PROC SURVEYMEANS; both are valid SAS since real SAS 9.4 supports STRATUM as an alias in every survey procedure); and the DOMAIN block's FORMAT statement replaced with a pre-computed character age-group column, since Jenner's PROC SURVEYMEANS does not yet accept a FORMAT statement inside the PROC step. All three survey-procedure methods converge on the same ~58% estimate in the captured run, same as the exercise is designed to demonstrate."
+}

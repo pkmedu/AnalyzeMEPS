@@ -1,0 +1,157 @@
+          name  type  LENGTH                         label
+--------------  ----  ------  ----------------------------
+        STATUS  char     0.0                  Vital status
+    DEATHCAUSE  char     0.0                Cause of death
+    AGECHDDIAG   num     8.0          Age at CHD diagnosis
+           SEX  char     0.0                           Sex
+    AGEATSTART   num     8.0            Age at study start
+        HEIGHT   num     8.0               Height (inches)
+        WEIGHT   num     8.0               Weight (pounds)
+     DIASTOLIC   num     8.0      Diastolic blood pressure
+      SYSTOLIC   num     8.0       Systolic blood pressure
+           MRW   num     8.0  Metropolitan Relative Weight
+       SMOKING   num     8.0            Cigarettes per day
+    AGEATDEATH   num     8.0                  Age at death
+   CHOLESTEROL   num     8.0             Serum cholesterol
+   CHOL_STATUS  char     0.0            Cholesterol status
+     BP_STATUS  char     0.0         Blood pressure status
+ WEIGHT_STATUS  char     0.0                 Weight status
+SMOKING_STATUS  char     0.0                Smoking status
+          name  type  LENGTH                         label
+--------------  ----  ------  ----------------------------
+        STATUS  char     0.0                  Vital status
+    DEATHCAUSE  char     0.0                Cause of death
+    AGECHDDIAG   num     8.0          Age at CHD diagnosis
+           SEX  char     0.0                           Sex
+    AGEATSTART   num     8.0            Age at study start
+        HEIGHT   num     8.0               Height (inches)
+        WEIGHT   num     8.0               Weight (pounds)
+     DIASTOLIC   num     8.0      Diastolic blood pressure
+      SYSTOLIC   num     8.0       Systolic blood pressure
+           MRW   num     8.0  Metropolitan Relative Weight
+       SMOKING   num     8.0            Cigarettes per day
+    AGEATDEATH   num     8.0                  Age at death
+   CHOLESTEROL   num     8.0             Serum cholesterol
+   CHOL_STATUS  char     0.0            Cholesterol status
+     BP_STATUS  char     0.0         Blood pressure status
+ WEIGHT_STATUS  char     0.0                 Weight status
+SMOKING_STATUS  char     0.0                Smoking status
+Table: sashelp.heart
+Column               Type      
+------               ----      
+Status               char      
+DeathCause           char      
+AgeCHDdiag           num       
+Sex                  char      
+AgeAtStart           num       
+Height               num       
+Weight               num       
+Diastolic            num       
+Systolic             num       
+MRW                  num       
+Smoking              num       
+AgeAtDeath           num       
+Cholesterol          num       
+Chol_Status          char      
+BP_Status            char      
+Weight_Status        char      
+Smoking_Status       char      
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: sashelp.heart
+Observations:  50
+Variables:     17
+Label:         Synthetic heart study data
+
+Variables (in creation order):
+
+  #  Variable        Type    Len  Format  Label
+---  --------------  ----  -----  ------  ----------------------------
+  1  STATUS          Char    200          Vital status
+  2  DEATHCAUSE      Char    200          Cause of death
+  3  AGECHDDIAG       Num      8          Age at CHD diagnosis
+  4  SEX             Char    200          
+  5  AGEATSTART       Num      8          Age at study start
+  6  HEIGHT           Num      8          Height (inches)
+  7  WEIGHT           Num      8          Weight (pounds)
+  8  DIASTOLIC        Num      8          Diastolic blood pressure
+  9  SYSTOLIC         Num      8          Systolic blood pressure
+ 10  MRW              Num      8          Metropolitan Relative Weight
+ 11  SMOKING          Num      8          Cigarettes per day
+ 12  AGEATDEATH       Num      8          Age at death
+ 13  CHOLESTEROL      Num      8          Serum cholesterol
+ 14  CHOL_STATUS     Char    200          Cholesterol status
+ 15  BP_STATUS       Char    200          Blood pressure status
+ 16  WEIGHT_STATUS   Char    200          Weight status
+ 17  SMOKING_STATUS  Char    200          Smoking status
+
+-------------------------------------------------------------------------------
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: sashelp.heart
+Observations:  50
+Variables:     17
+Label:         Synthetic heart study data
+
+Variables (in alphabetical order):
+
+  #  Variable        Type    Len  Format  Label
+---  --------------  ----  -----  ------  ----------------------------
+  1  AGEATDEATH       Num      8          Age at death
+  2  AGEATSTART       Num      8          Age at study start
+  3  AGECHDDIAG       Num      8          Age at CHD diagnosis
+  4  BP_STATUS       Char    200          Blood pressure status
+  5  CHOLESTEROL      Num      8          Serum cholesterol
+  6  CHOL_STATUS     Char    200          Cholesterol status
+  7  DEATHCAUSE      Char    200          Cause of death
+  8  DIASTOLIC        Num      8          Diastolic blood pressure
+  9  HEIGHT           Num      8          Height (inches)
+ 10  MRW              Num      8          Metropolitan Relative Weight
+ 11  SEX             Char    200          
+ 12  SMOKING          Num      8          Cigarettes per day
+ 13  SMOKING_STATUS  Char    200          Smoking status
+ 14  STATUS          Char    200          Vital status
+ 15  SYSTOLIC         Num      8          Systolic blood pressure
+ 16  WEIGHT           Num      8          Weight (pounds)
+ 17  WEIGHT_STATUS   Char    200          Weight status
+
+-------------------------------------------------------------------------------
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: sashelp.heart
+Observations:  50
+Variables:     17
+Label:         Synthetic heart study data
+
+Variables (in creation order):
+
+  #  Variable        Type    Len  Format  Label
+---  --------------  ----  -----  ------  ----------------------------
+  1  STATUS          Char    200          Vital status
+  2  DEATHCAUSE      Char    200          Cause of death
+  3  AGECHDDIAG       Num      8          Age at CHD diagnosis
+  4  SEX             Char    200          
+  5  AGEATSTART       Num      8          Age at study start
+  6  HEIGHT           Num      8          Height (inches)
+  7  WEIGHT           Num      8          Weight (pounds)
+  8  DIASTOLIC        Num      8          Diastolic blood pressure
+  9  SYSTOLIC         Num      8          Systolic blood pressure
+ 10  MRW              Num      8          Metropolitan Relative Weight
+ 11  SMOKING          Num      8          Cigarettes per day
+ 12  AGEATDEATH       Num      8          Age at death
+ 13  CHOLESTEROL      Num      8          Serum cholesterol
+ 14  CHOL_STATUS     Char    200          Cholesterol status
+ 15  BP_STATUS       Char    200          Blood pressure status
+ 16  WEIGHT_STATUS   Char    200          Weight status
+ 17  SMOKING_STATUS  Char    200          Smoking status
+
+-------------------------------------------------------------------------------
+

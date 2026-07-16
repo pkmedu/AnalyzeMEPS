@@ -1,0 +1,17 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: PROC DATASETS library=WORK
+
+NOTE: NOTE: KILL option deleted 0 member(s) from library WORK.
+NOTE: Option LS changed to 155.
+NOTE: Option PS changed to 79.
+NOTE: Option FORMCHAR changed to |----|+|---+=|-/\<>*.
+NOTE: PROC FORMAT library=WORK
+
+NOTE: FORMAT sex_fmt defined (2 ranges).
+NOTE: FORMAT povcat_fmt defined (5 ranges).
+NOTE: PROC FORMAT library=WORK
+
+NOTE: PROC CATALOG catalog=WORK.FORMATS
+

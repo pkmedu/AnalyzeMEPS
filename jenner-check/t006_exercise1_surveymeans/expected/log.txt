@@ -1,0 +1,53 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: Library CDATA assigned path=./cdata_lib.
+NOTE: DATA cdata.h216
+
+NOTE: Processing inline DATALINES (20 lines)
+
+NOTE: Read 20 rows from DATALINES.
+NOTE: Wrote cdata.h216 (20 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC DATASETS library=WORK
+
+NOTE: NOTE: KILL option deleted 0 member(s) from library WORK.
+NOTE: Option LS changed to 132.
+NOTE: Option PS changed to 79.
+NOTE: Option FORMCHAR changed to |----|+|---+=|-/\<>*.
+NOTE: PROC FORMAT library=WORK
+
+NOTE: FORMAT AGECAT defined (2 ranges).
+NOTE: FORMAT totexp19_cate defined (2 ranges).
+NOTE: DATA WORK.PUF216
+
+
+NOTE: Read 20 rows from CDATA.H216.
+NOTE: Wrote WORK.PUF216 (20 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to MEPS FULL-YEAR CONSOLIDATED FILE, 2019.
+NOTE: ODS Graphics is OFF.
+NOTE: Option TITLE2 changed to PROPORTION OF PERSONS WITH AN EXPENSE (2-category NUMERIC VARIABLE/CLASS statement required), 2019 _Method 1.
+NOTE: PROC SURVEYMEANS data=WORK.PUF216
+
+NOTE: Using Python scipy version 1.16.3
+NOTE: PROC SURVEYMEANS completed.
+NOTE: Option TITLE2 changed to PROPORTION OF PERSONS WITH AN EXPENSE (2-CATEGORY CHARACTER VARIABLE), 2019 - Method 2.
+NOTE: PROC SURVEYMEANS data=WORK.PUF216
+
+NOTE: Using Python scipy version 1.16.3
+NOTE: PROC SURVEYMEANS completed.
+NOTE: Option TITLE2 changed to PERCENTAGE OF PERSONS WITH AN EXPENSE, 2019 - Method 3.
+NOTE: PROC SURVEYFREQ data=WORK.PUF216
+
+NOTE: Using Python scipy version 1.16.3
+NOTE: PROC SURVEYFREQ completed.
+NOTE: Option TITLE2 changed to MEAN AND MEDIAN EXPENSE PER PERSON WITH AN EXPENSE, OVEALL and FOR AGES 0-64, AND 65+, 2019.
+NOTE: PROC SURVEYMEANS data=WORK.PUF216
+
+NOTE: Using Python scipy version 1.16.3
+NOTE: PROC SURVEYMEANS completed.

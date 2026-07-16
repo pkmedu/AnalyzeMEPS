@@ -1,0 +1,71 @@
+MEPS FULL-YEAR CONSOLIDATED FILE, 2019                                                                                             1
+PROPORTION OF PERSONS WITH AN EXPENSE (2-category NUMERIC VARIABLE/CLASS statement required), 2019 _Method 1
+
+
+                        The SURVEYMEANS Procedure
+
+     Number of Observations Read         20
+     Number of Observations Used         20
+     Sum of Weights                      19980.00
+     Stratum Variable: varstr                5 Strata
+     Cluster Variable: varpsu             2 Clusters
+
+Variable                N            Mean             Sum       Std Error        Lower CL        Upper CL
+---------------------------------------------------------------------------------------------------------
+with_an_expense        20       3389.4895   67722000.0000        604.8580       1834.6525       4944.3265
+---------------------------------------------------------------------------------------------------------
+
+MEPS FULL-YEAR CONSOLIDATED FILE, 2019                                                                                             1
+PROPORTION OF PERSONS WITH AN EXPENSE (2-CATEGORY CHARACTER VARIABLE), 2019 - Method 2
+
+
+                        The SURVEYMEANS Procedure
+
+     Number of Observations Read         20
+     Number of Observations Used         20
+     Sum of Weights                      19980.00
+     Stratum Variable: varstr                5 Strata
+     Cluster Variable: varpsu             2 Clusters
+
+Variable         Level                N            Mean       Std Error        Lower CL        Upper CL
+-------------------------------------------------------------------------------------------------------
+char_with_an_expense  Any Expense         20          0.5821          0.0450          0.4879          0.6763
+char_with_an_expense  No Expense          20          0.4179          0.0450          0.3237          0.5121
+-------------------------------------------------------------------------------------------------------
+
+MEPS FULL-YEAR CONSOLIDATED FILE, 2019                                                                                             1
+PERCENTAGE OF PERSONS WITH AN EXPENSE, 2019 - Method 3
+
+
+                        The SURVEYFREQ Procedure
+
+  Table of char_with_an_expense
+
+char_with_an_expenseFrequency      Wgt Freq     Percent
+-------------------------------------------------------
+Any Expense              11      11630.70       58.21
+No Expense                9       8349.30       41.79
+Total                    20      19980.00      100.00
+-------------------------------------------------------
+
+MEPS FULL-YEAR CONSOLIDATED FILE, 2019                                                                                             1
+MEAN AND MEDIAN EXPENSE PER PERSON WITH AN EXPENSE, OVEALL and FOR AGES 0-64, AND 65+, 2019
+
+
+                        The SURVEYMEANS Procedure
+
+     Number of Observations Read         20
+     Number of Observations Used         20
+     Sum of Weights                      19980.00
+     Stratum Variable: varstr                5 Strata
+     Cluster Variable: varpsu             2 Clusters
+
+char_with_an_expense  char_with_an_expense  AGECAT_LABEL  Variable                N            Mean             Sum       Std Error        Lower CL        Upper CL          Median
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                          totexp19               20       3389.4895   67722000.0000        604.8580       1834.6525       4944.3265       2650.0000
+ Any Expense   Any Expense                totexp19               11       5822.6934   67722000.0000       1195.3016       2750.0727       8895.3141       4200.0000
+  No Expense    No Expense                totexp19                9          0.0000          0.0000          0.0000                                          0.0000
+ Any Expense   Any Expense                totexp19               11       5822.6934   67722000.0000       1195.3016       2750.0727       8895.3141       4200.0000
+  No Expense    No Expense                totexp19                9          0.0000          0.0000          0.0000                                          0.0000
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

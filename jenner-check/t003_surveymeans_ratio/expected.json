@@ -1,0 +1,13 @@
+{
+  "_captured_at": "2026-07-16T12:20:00Z",
+  "_captured_run_id": "r_796eeba736964e3aa6b7a90f2806f3eb",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: FORMAT povcat_fmt defined (5 ranges).",
+    "NOTE: PROC SURVEYMEANS data=pufmeps.h209",
+    "NOTE: PROC SURVEYMEANS completed."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

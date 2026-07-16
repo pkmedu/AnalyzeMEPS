@@ -1,0 +1,22 @@
+The FORMAT Procedure
+Format Name: POVCAT_FMT
+    Start            End    Label
+        1              1    Poor
+        2              2    Near Poor/Low Income
+        3              3    Near Poor/Low Income
+        4              4    Middle Income
+        5              5    High Income
+
+Format Name: SEX_FMT
+    Start            End    Label
+        1              1    Male
+        2              2    Female
+
+Contents of Catalog WORK.FORMATS
+Name                 Type       Description
+----                 ----       -----------
+POVCAT_FMT           FORMAT     
+SEX_FMT              FORMAT     
+
+2 entries in catalog.
+

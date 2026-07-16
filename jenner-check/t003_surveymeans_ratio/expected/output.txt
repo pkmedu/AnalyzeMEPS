@@ -1,0 +1,26 @@
+
+                        The SURVEYMEANS Procedure
+
+     Number of Observations Read         20
+     Number of Observations Used         20
+     Sum of Weights                      19980.00
+     Stratum Variable: varstr                5 Strata
+     Cluster Variable: varpsu             2 Clusters
+
+Variable                N            Mean           Ratio       Std Error        Lower CL        Upper CL
+---------------------------------------------------------------------------------------------------------
+totexp18               20       3827.2675                        523.2451       2482.2233       5172.3118
+obvexp18               20        596.2865                         13.8616        560.6540        631.9189
+optexp18               20        275.2008                         23.5704        214.6111        335.7904
+ertexp18               20        539.8536                        242.6267        -83.8381       1163.5453
+iptexp18               20        975.3544                        441.1231       -158.5886       2109.2973
+rxexp18                20       1124.1124                        108.7451        844.5742       1403.6506
+hhaexp18               20         71.9417                         32.5285        -11.6756        155.5590
+obvexp18/totexp18        20                          0.1558          0.0224                                
+optexp18/totexp18        20                          0.0719          0.0154                                
+ertexp18/totexp18        20                          0.1411          0.0442                                
+iptexp18/totexp18        20                          0.2548          0.0811                                
+rxexp18/totexp18        20                          0.2937          0.0630                                
+hhaexp18/totexp18        20                          0.0188          0.0060                                
+---------------------------------------------------------------------------------------------------------
+
