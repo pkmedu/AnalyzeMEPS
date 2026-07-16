@@ -1,0 +1,22 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: Library PUFMEPS uses 1 concatenated paths.
+NOTE: DATA pufmeps.h209
+
+NOTE: Processing inline DATALINES (20 lines)
+
+NOTE: Read 20 rows from DATALINES.
+NOTE: Wrote pufmeps.h209 (20 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option LS changed to 132.
+NOTE: PROC FORMAT library=WORK
+
+NOTE: FORMAT povcat_fmt defined (5 ranges).
+NOTE: PROC SURVEYMEANS data=pufmeps.h209
+
+NOTE: Using Python scipy version 1.16.3
+NOTE: ODS plot written: surveymeans_ci.spec.json
+NOTE: PROC SURVEYMEANS completed.

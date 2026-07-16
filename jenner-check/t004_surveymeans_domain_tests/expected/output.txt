@@ -1,0 +1,76 @@
+
+                        The SURVEYMEANS Procedure
+
+     Number of Observations Read         20
+     Number of Observations Used         20
+     Sum of Weights                      19980.00
+     Stratum Variable: varstr                5 Strata
+     Cluster Variable: varpsu             2 Clusters
+
+    povcat18  Variable                N            Mean       Std Error        Lower CL        Upper CL
+-------------------------------------------------------------------------------------------------------
+              totexp18               20       3827.2675        523.2451       2482.2233       5172.3118
+              totexp18                5       2041.0388          0.0000                                
+              totexp18                4       1537.9728          0.0000                                
+              totexp18                4       1399.8564          0.0000                                
+              totexp18                4       7592.3442          0.0000                                
+              totexp18                3       6954.6900          0.0000                                
+-------------------------------------------------------------------------------------------------------
+
+
+                        The SURVEYMEANS Procedure
+
+     Number of Observations Read         20
+     Number of Observations Used         20
+     Sum of Weights                      19980.00
+     Stratum Variable: varstr                5 Strata
+     Cluster Variable: varpsu             2 Clusters
+
+    povcat18  Variable                N            Mean       Std Error        Lower CL        Upper CL
+-------------------------------------------------------------------------------------------------------
+              totexp18               20       3827.2675        523.2451       2482.2233       5172.3118
+              totexp18                5       2041.0388          0.0000                                
+              totexp18                4       1537.9728          0.0000                                
+              totexp18                4       1399.8564          0.0000                                
+              totexp18                4       7592.3442          0.0000                                
+              totexp18                3       6954.6900          0.0000                                
+-------------------------------------------------------------------------------------------------------
+
+
+                        The SURVEYMEANS Procedure
+
+     Number of Observations Read         20
+     Number of Observations Used         20
+     Sum of Weights                      19980.00
+     Stratum Variable: varstr                5 Strata
+     Cluster Variable: varpsu             2 Clusters
+
+    povcat18  Variable                N            Mean       Std Error        Lower CL        Upper CL
+-------------------------------------------------------------------------------------------------------
+              totexp18               20       3827.2675        523.2451       2482.2233       5172.3118
+              totexp18                5       2041.0388          0.0000                                
+              totexp18                4       1537.9728          0.0000                                
+              totexp18                4       1399.8564          0.0000                                
+              totexp18                4       7592.3442          0.0000                                
+              totexp18                3       6954.6900          0.0000                                
+-------------------------------------------------------------------------------------------------------
+
+
+                        The SURVEYMEANS Procedure
+
+     Number of Observations Read         20
+     Number of Observations Used         20
+     Sum of Weights                      19980.00
+     Stratum Variable: varstr                5 Strata
+     Cluster Variable: varpsu             2 Clusters
+
+    povcat18  Variable                N            Mean       Std Error        Lower CL        Upper CL
+-------------------------------------------------------------------------------------------------------
+              totexp18               20       3827.2675        523.2451       2482.2233       5172.3118
+              totexp18                5       2041.0388          0.0000                                
+              totexp18                4       1537.9728          0.0000                                
+              totexp18                4       1399.8564          0.0000                                
+              totexp18                4       7592.3442          0.0000                                
+              totexp18                3       6954.6900          0.0000                                
+-------------------------------------------------------------------------------------------------------
+

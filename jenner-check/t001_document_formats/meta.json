@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_document_formats",
+  "source_file": "HowToDocumentFormatsManageEntries.sas",
+  "source_blob_sha": "c3a6d5c7aa527af288131d471b57231cf062829c",
+  "source_commit": "3cb64d3c431cbab3f9f9b6110bb3eb6c34dc03b8",
+  "notes": "Byte-identical copy of the author's script: defines two PROC FORMAT catalogs (sex_fmt, povcat_fmt), lists them with PROC FORMAT FMTLIB, then dumps catalog contents with PROC CATALOG. Fully self-contained, no external data or edits required."
+}

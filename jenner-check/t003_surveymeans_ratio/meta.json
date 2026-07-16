@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_surveymeans_ratio",
+  "source_file": "ProcSurveyMeansRatio.sas",
+  "source_blob_sha": "c909df5b867a04f9668b621c6f69c86e30528fbf",
+  "source_commit": "3cb64d3c431cbab3f9f9b6110bb3eb6c34dc03b8",
+  "notes": "PROC FORMAT and PROC SURVEYMEANS statements are byte-identical to the source. Substituted a mock pufmeps.h209 dataset (20 rows, 5 strata x 2 PSUs) with the exact columns the script reads (varstr, varpsu, perwt18f, totexp18 and six expense-category variables) for the author's LIBNAME pufmeps 'C:\\Data'; pointing at the restricted MEPS HC-209 file. Also dropped a trailing `*ods output domainratio=domain_ratio;` comment statement, which is valid SAS but not accepted by Jenner's PROC SURVEYMEANS statement parser (filed separately). The RATIO statement itself -- the point of the script -- runs unmodified and produces ratio estimates, SEs, and confidence limits per expense category."
+}

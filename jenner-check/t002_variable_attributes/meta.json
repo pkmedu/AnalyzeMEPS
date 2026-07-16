@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_variable_attributes",
+  "source_file": "HowToGetSASVariableAttributes.sas",
+  "source_blob_sha": "7499a488567f8ae0f0b52f1b1d83cff6969f8870",
+  "source_commit": "3cb64d3c431cbab3f9f9b6110bb3eb6c34dc03b8",
+  "notes": "Adapted from the author's script, which demonstrates several ways to pull variable attributes for sashelp.heart: PROC SQL against SASHELP.VCOLUMN, PROC SQL against DICTIONARY.COLUMNS, PROC SQL DESCRIBE TABLE, and three PROC CONTENTS variants (ODS-selected, VARNUM order, default). Two blocks were dropped: a PROC PRINT read of SASHELP.VCOLUMN with a WHERE clause was intermittently nondeterministic on Jenner (unrelated PROC SQL reads of the same view were stable), and a trailing PROC DATASETS CONTENTS...POSITION block used an option that is documented only for standalone PROC CONTENTS, not the PROC DATASETS CONTENTS statement -- the author's own error. All remaining statements are byte-identical to the source and fully self-contained via sashelp.heart."
+}

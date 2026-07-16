@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_surveymeans_domain_tests",
+  "source_file": "HowToTestSurveymeans.sas",
+  "source_blob_sha": "1a7a4538d61b81cbab647c76ed616e92019281a8",
+  "source_commit": "3cb64d3c431cbab3f9f9b6110bb3eb6c34dc03b8",
+  "notes": "Four PROC SURVEYMEANS blocks kept byte-identical (DIFFMEANS, ADJUST=BON, CLDIFF, ADJUST=BON+CLDIFF domain-mean-comparison options across POVCAT18). Substituted a mock pufmeps.h209 (20 rows, 5 strata) for the author's LIBNAME pufmeps 'C:\\Data'; pointing at restricted MEPS HC-209. Dropped the four `FORMAT POVCAT18 povcat_fmt.;` statements the author placed inside each PROC SURVEYMEANS block -- Jenner's PROC SURVEYMEANS does not accept a FORMAT statement (filed separately); DOMAIN still groups on the same five numeric POVCAT18 levels the format would have labeled, so the DIFFMEANS/CLDIFF/ADJUST=BON comparisons are unaffected."
+}

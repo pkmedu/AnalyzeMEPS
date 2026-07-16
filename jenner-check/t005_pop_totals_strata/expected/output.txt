@@ -1,0 +1,18 @@
+PROC COMPARE with no options or extra statements
+
+The COMPARE Procedure
+Comparison of WORK.PROC_SUMMARY_TOTALS with WORK.SQL_TOTALS
+Data Set Summary
+Dataset          Created    Observations    Variables
+WORK.PROC_SUMMARY_TOTALS                      5            2
+WORK.SQL_TOTALS                        5            2
+Variables Summary
+Number of Variables in Common: 2
+Observation Summary
+Observation       Base    Compare
+First Obs            1          1
+Last Obs             5          5
+Number of Observations in Common: 5
+Values Comparison Summary
+Number of Variables Compared with All Observations Equal: 2
+No unequal values were found. All values compared are equal.

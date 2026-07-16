@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-16T12:35:00Z",
+  "_captured_run_id": "r_bb4b3e36602344a9a1af8a1af9e9174b",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Output dataset WORK.PROC_SUMMARY_Totals has 5 observations and 2 variables.",
+    "NOTE: Table WORK.SQL_Totals created.",
+    "NOTE:   Matched observations: 5",
+    "NOTE:     - Equal:            5"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

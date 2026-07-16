@@ -1,0 +1,21 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: PROC SQL 
+
+NOTE: PROC SQL statement used.
+NOTE: PROC SQL 
+
+NOTE: PROC SQL statement used.
+NOTE: PROC SQL 
+
+NOTE: PROC SQL statement used.
+NOTE: PROC CONTENTS data=sashelp.heart
+
+NOTE: PROC CONTENTS completed: 50 observations, 17 variables
+NOTE: PROC CONTENTS data=sashelp.heart
+
+NOTE: PROC CONTENTS completed: 50 observations, 17 variables
+NOTE: PROC CONTENTS data=sashelp.heart
+
+NOTE: PROC CONTENTS completed: 50 observations, 17 variables
